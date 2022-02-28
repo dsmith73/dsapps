@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Roboto&family=Raleway&family=Roboto+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+@import url("card.css");
+
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: linear-gradient(295deg, rgb(97, 97, 97), rgb(0, 0, 0));
+    --text-color: rgb(233, 233, 230);
+    --primary-color: rgba(12, 12, 12, 0.26);
+    --overlay-color: rgba(26, 26, 36, .85);
+    --menu-speed: 0.75s;
+    --a-active: rgb(255, 181, 70);
+    --a-hover: rgb(111, 209, 255);
+    --card-title: rgb(10, 83, 105);
+}
+
+body {
+    background: var(--bg);
+    color: var(--text-color);
+    font-family: Yanone Kaffeesatz;
+    font-size: 1.2em;
+    line-height: 1.4;
+    height: 100%;
+    border: none;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--text-color);
+}
+
+a, a::before {
+    color: var(--text-color);
+}
+a:hover {
+    color: var(--a-hover);
+    transition: 100ms ease-in-out;
+}
+a:active, a::after {
+    color: var(--a-active);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-left: 1rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+h1 {
+    color: var(--a-active);
+    margin-bottom: 0.5rem;
+}
+
+
+/* footer {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vh;
+} */
+
+
+
+
+
+
+
+
+
+
