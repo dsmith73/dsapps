@@ -1,7 +1,7 @@
 // Service Worker  
 // must be created in the root directory - if created in a sub-dir, then it can only be used for files in that dir  
 
-const dsApps = "ds-apps-site-v1"
+const VERSION = "1"
 const assets = [
     "./", 
     "./src/styles.css", 
@@ -25,7 +25,7 @@ const assets = [
 
 self.addEventListener("install", e => {
     e.waitUntil(
-        caches.open("dsApps").then(cache => {
+        caches.open(`dsapps-v${VERSION}`).then(cache => {
             return cache.addAll(assets)
         })
     )
